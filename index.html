@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="ru" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>BUTTER — кофейня в Махачкале | Спешелти кофе и завтраки весь день</title>
+<meta name="description" content="BUTTER — спешелти кофейня в Махачкале. Кофе, авторские напитки, комбуча, завтраки весь день. Просп. Расула Гамзатова, 14. Ежедневно 10:00–20:00." />
+<link rel="icon" type="image/svg+xml" href="favicon.svg" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<div id="progress"></div>
+<canvas id="fx" aria-hidden="true"></canvas>
+<div id="grain" aria-hidden="true"></div>
+
+<header class="nav">
+  <div class="wrap nav__inner">
+    <a class="display nav__logo" href="#top">BUTTER</a>
+    <nav class="nav__links">
+      <a href="#menu">Напитки</a>
+      <a href="#special">Special</a>
+      <a href="#food">Завтраки</a>
+      <a href="#gallery">Галерея</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="btn btn--dark btn--sm" href="tel:+79882777192">Позвонить</a>
+  </div>
+</header>
+
+<main>
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true"></div>
+    <div class="scene" aria-hidden="true">
+      <div class="chip chip--1" data-depth="0.85"><img src="images/latte.jpg" alt="" /></div>
+      <div class="chip chip--2" data-depth="0.5"><img src="images/drink-cherry.jpg" alt="" /></div>
+      <div class="chip chip--3" data-depth="0.65"><img src="images/waffles-top.jpg" alt="" /></div>
+      <div class="chip chip--tag chip--4 display" data-depth="1.15">BUT FIRST<br />BUTTER</div>
+      <div class="chip chip--tag chip--5" data-depth="0.4">Ежедневно<br /><strong>10:00–20:00</strong></div>
+    </div>
+    <div class="wrap hero__inner">
+      <p class="lbl lbl--light">Кофейня · бар · Махачкала</p>
+      <h1 class="display hero__title">BUTTER</h1>
+      <p class="hero__text">Спешелти кофе, завтраки весь день и авторские напитки на проспекте Расула Гамзатова, 14.</p>
+      <div class="hero__cta">
+        <a class="btn btn--light" href="#menu">Смотреть меню</a>
+        <a class="btn btn--outline-light" href="#contacts">Как добраться</a>
+      </div>
+      <div class="hero__facts">
+        <div><strong>10:00–20:00</strong>ежедневно</div>
+        <div><strong><a href="tel:+79882777192">+7 (988) 277-71-92</a></strong>бронь и заказ</div>
+        <div><strong>просп. Р. Гамзатова, 14</strong>Махачкала</div>
+      </div>
+    </div>
+    <div class="hero__scroll">Scroll</div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <div class="marquee__group display">
+        <span>But First Butter</span><span>·</span><span>Specialty Coffee</span><span>·</span><span>Butter Club</span><span>·</span><span>Завтраки весь день</span><span>·</span>
+      </div>
+      <div class="marquee__group display">
+        <span>But First Butter</span><span>·</span><span>Specialty Coffee</span><span>·</span><span>Butter Club</span><span>·</span><span>Завтраки весь день</span><span>·</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section class="section">
+    <div class="giant display" aria-hidden="true">BUTTER CLUB</div>
+    <div class="wrap">
+      <div class="cards">
+        <article class="card spot reveal" data-tilt>
+          <p class="display card__num">01</p>
+          <h3>Спешелти кофе</h3>
+          <p>Собственная обжарка и классика от эспрессо до колд-брю с сырной пеной. Кофе, ради которого возвращаются.</p>
+        </article>
+        <article class="card spot reveal" data-tilt>
+          <p class="display card__num">02</p>
+          <h3>Завтраки весь день</h3>
+          <p>Butter-сеты, скрамбл, панкейки и льежские вафли — с открытия и до самого вечера.</p>
+        </article>
+        <article class="card spot reveal" data-tilt>
+          <p class="display card__num">03</p>
+          <h3>Special &amp; functional</h3>
+          <p>Комбуча живой ферментации, лимонады, матча и функциональные напитки с коллагеном и протеином.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- COFFEE -->
+  <section class="section" id="menu">
+    <div class="giant display" aria-hidden="true">COFFEE</div>
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="display section__title">КОФЕ</h2>
+        <p class="section__note">цены в рублях</p>
+      </div>
+      <div class="menu-cols reveal">
+        <div>
+          <div class="menu-group">
+            <h4>Чёрный</h4>
+            <ul class="menu-list">
+              <li><span>Эспрессо</span><span class="dots"></span><span class="price">260</span></li>
+              <li><span>Американо</span><span class="dots"></span><span class="price">260</span></li>
+              <li><span>Фильтр</span><span class="dots"></span><span class="price">250/290</span></li>
+              <li><span>Американо / поп-корн</span><span class="dots"></span><span class="price">360</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h4>Белый</h4>
+            <ul class="menu-list">
+              <li><span>Капучино S/M</span><span class="dots"></span><span class="price">320/350</span></li>
+              <li><span>Флэт уайт</span><span class="dots"></span><span class="price">350</span></li>
+              <li><span>Раф ваниль</span><span class="dots"></span><span class="price">360</span></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="menu-group">
+            <h4>Айс</h4>
+            <ul class="menu-list">
+              <li><span>Айс латте</span><span class="dots"></span><span class="price">350</span></li>
+              <li><span>Айс апельсин, малина</span><span class="dots"></span><span class="price">420</span></li>
+              <li><span>Бамбл апельсин / гранат</span><span class="dots"></span><span class="price">390/450</span></li>
+              <li><span>Тоник малина, годжи</span><span class="dots"></span><span class="price">420</span></li>
+              <li><span>Тоник гранат, маракуйя</span><span class="dots"></span><span class="price">420</span></li>
+              <li><span>Колд-брю тропик, малина</span><span class="dots"></span><span class="price">400</span></li>
+              <li><span>Колд-брю виноград, сырная пена</span><span class="dots"></span><span class="price">400</span></li>
+            </ul>
+          </div>
+        </div>
+        <figure class="menu-photo" data-tilt style="margin:0">
+          <img src="images/menu-drinks.jpg" alt="Меню напитков BUTTER" loading="lazy" />
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOT COFFEE -->
+  <section class="section section--tight">
+    <div class="giant display" aria-hidden="true">MATCHA</div>
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="display section__title">НЕ КОФЕ</h2>
+      </div>
+      <div class="menu-cols menu-cols--4 reveal">
+        <div class="menu-group">
+          <h4>Матча</h4>
+          <ul class="menu-list">
+            <li><span>Матча-латте / айс</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Матча-крем, тоник</span><span class="dots"></span><span class="price">470</span></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <h4>Bubble</h4>
+          <ul class="menu-list">
+            <li><span>Виноград, черника</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Маракуйя, алоэ</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Матча, банан</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Кофе, карамель</span><span class="dots"></span><span class="price">450</span></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <h4>Фреши</h4>
+          <ul class="menu-list">
+            <li><span>Яблоко</span><span class="dots"></span><span class="price">380</span></li>
+            <li><span>Апельсин</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Грейпфрут</span><span class="dots"></span><span class="price">460</span></li>
+            <li><span>Морковь</span><span class="dots"></span><span class="price">350</span></li>
+          </ul>
+        </div>
+        <div class="menu-group">
+          <h4>Лимонады</h4>
+          <ul class="menu-list">
+            <li><span>Лимон, имбирь</span><span class="dots"></span><span class="price">390</span></li>
+            <li><span>Алоэ, маракуйя</span><span class="dots"></span><span class="price">390</span></li>
+            <li><span>Гранат, вишня</span><span class="dots"></span><span class="price">390</span></li>
+            <li><span>Персик, молочный улун</span><span class="dots"></span><span class="price">390</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SPECIAL -->
+  <section class="section section--tight" id="special">
+    <div class="wrap">
+      <div class="cards">
+        <article class="card card--dark spot reveal" data-tilt>
+          <h3 class="display card__title">SPECIAL</h3>
+          <p>Комбуча — ферментированный чай с пробиотиками, который мы получаем методом живой ферментации на основе чайного гриба и чая Palais des Thés.</p>
+          <ul class="menu-list" style="margin-top:18px">
+            <li><span>Небесная гора</span><span class="dots"></span><span class="price">290</span></li>
+            <li><span>Хаммама</span><span class="dots"></span><span class="price">290</span></li>
+          </ul>
+        </article>
+        <article class="card spot reveal" data-tilt>
+          <h3 class="display card__title">FUNCTIONAL</h3>
+          <ul class="menu-list" style="margin-top:18px">
+            <li><span>Ягодный смузи с коллагеном</span><span class="dots"></span><span class="price">470</span></li>
+            <li><span>Протеиновый коктейль с кофе</span><span class="dots"></span><span class="price">450</span></li>
+          </ul>
+        </article>
+        <article class="card spot reveal" data-tilt>
+          <h3 class="lbl" style="margin:0">Чай Palais des Thés</h3>
+          <ul class="menu-list" style="margin-top:18px">
+            <li><span>Чёрный чай Влюблённых</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Чёрный чай Русский купаж</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Чёрный чай Небесная гора</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Зелёный чай Таитянские красавицы</span><span class="dots"></span><span class="price">450</span></li>
+            <li><span>Травы Дагестана</span><span class="dots"></span><span class="price">380</span></li>
+          </ul>
+          <p class="card__fine">Авторские купажированные чаи для гедонистов и ценителей изысканного вкуса.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOD -->
+  <section class="section" id="food">
+    <div class="giant display" aria-hidden="true">BRUNCH</div>
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="display section__title">ЕДА / ЗАВТРАКИ</h2>
+        <p class="section__note">цены в рублях</p>
+      </div>
+      <div class="menu-cols--2 menu-cols reveal">
+        <div>
+          <div class="menu-group">
+            <h4>Butter-сет</h4>
+            <ul class="menu-list">
+              <li><span>№1 Тёмный тартин, взбитое масло, сыр грюйер, яйцо всмятку, авокадо</span><span class="dots"></span><span class="price">560</span></li>
+              <li><span>№2 Англ. маффин, взбитое масло с корицей, сыр грюйер, джем</span><span class="dots"></span><span class="price">560</span></li>
+              <li><span>№3 Чиабатта злаки, взбитое масло, сыр тет-де-муан, джем, мягкое яйцо, редис</span><span class="dots"></span><span class="price">620</span></li>
+              <li><span>№4 Скон, розовое ягодное масло, мёд, ягоды, мягкое яйцо</span><span class="dots"></span><span class="price">580</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h4>Яйца</h4>
+            <ul class="menu-list">
+              <li><span>Тартин, скрамбл, авокадо</span><span class="dots"></span><span class="price">480</span></li>
+              <li><span>Тартин, скрамбл, грибы</span><span class="dots"></span><span class="price">460</span></li>
+              <li><span>Тартин, скрамбл, лосось</span><span class="dots"></span><span class="price">540</span></li>
+              <li><span>Скрамбл, ветчина индейка, банановый хлеб</span><span class="dots"></span><span class="price">680</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h4>Злаки</h4>
+            <ul class="menu-list">
+              <li><span>Каша овсяная на кокосовом молоке</span><span class="dots"></span><span class="price">480</span></li>
+              <li><span>Каша рисовая, томлёная груша</span><span class="dots"></span><span class="price">460</span></li>
+              <li><span>Гранола, греческий йогурт, ягоды</span><span class="dots"></span><span class="price">460</span></li>
+              <li><span>Чиа-пудинг, манго, маракуйя</span><span class="dots"></span><span class="price">460</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h4>Творог</h4>
+            <ul class="menu-list">
+              <li><span>Сырники, сметана, джем</span><span class="dots"></span><span class="price">480</span></li>
+              <li><span>Запеканка творожная</span><span class="dots"></span><span class="price">480</span></li>
+              <li><span>Творог, ягоды, мёд</span><span class="dots"></span><span class="price">490</span></li>
+            </ul>
+          </div>
+        </div>
+        <div>
+          <div class="menu-group">
+            <h4>Тесто</h4>
+            <ul class="menu-list">
+              <li><span>Панкейки, кленовый сироп</span><span class="dots"></span><span class="price">460</span></li>
+              <li><span>Шоколадные панкейки с шоколадом</span><span class="dots"></span><span class="price">460</span></li>
+              <li><span>Вафли льежские, шоколад, ягоды</span><span class="dots"></span><span class="price">520</span></li>
+              <li><span>Вафли льежские, карамель</span><span class="dots"></span><span class="price">520</span></li>
+              <li><span>Бриошь, фисташка, вишнёвый джем</span><span class="dots"></span><span class="price">480</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h4>Баттербро́ды / сэндвичи</h4>
+            <ul class="menu-list">
+              <li><span>Солодовая фокачча, индейка, страчателла</span><span class="dots"></span><span class="price">560</span></li>
+              <li><span>Чиабатта злаки, тунец, томаты, кукуруза</span><span class="dots"></span><span class="price">560</span></li>
+              <li><span>Брускетта, взбитое масло, овощи</span><span class="dots"></span><span class="price">350</span></li>
+              <li><span>Сэндвич с лососем</span><span class="dots"></span><span class="price">680</span></li>
+              <li><span>Сэндвич с курицей</span><span class="dots"></span><span class="price">580</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h4>Салаты</h4>
+            <ul class="menu-list">
+              <li><span>Зелёный салат, авокадо, яйцо пашот</span><span class="dots"></span><span class="price">480</span></li>
+              <li><span>Салат с курицей и печёными овощами</span><span class="dots"></span><span class="price">520</span></li>
+              <li><span>Салат с лососем и цитрусами</span><span class="dots"></span><span class="price">720</span></li>
+            </ul>
+          </div>
+          <div class="menu-group">
+            <h4>Добавки</h4>
+            <ul class="menu-list">
+              <li><span>Картофель фри</span><span class="dots"></span><span class="price">360</span></li>
+              <li><span>Баттер+бред</span><span class="dots"></span><span class="price">150</span></li>
+            </ul>
+          </div>
+          <figure class="menu-photo" data-tilt style="margin:30px 0 0">
+            <img src="images/menu-food.jpg" alt="Меню завтраков BUTTER" loading="lazy" />
+          </figure>
+        </div>
+      </div>
+      <div class="kitchen reveal">
+        <figure class="kitchen__item" data-tilt>
+          <img src="images/sandwich.jpg" alt="Сэндвич чиабатта с тунцом" loading="lazy" />
+          <figcaption>Чиабатта злаки, тунец, томаты</figcaption>
+        </figure>
+        <figure class="kitchen__item" data-tilt>
+          <img src="images/breakfast.jpg" alt="Скрамбл с ветчиной из индейки и банановым хлебом" loading="lazy" />
+          <figcaption>Скрамбл, ветчина индейка, банановый хлеб</figcaption>
+        </figure>
+        <figure class="kitchen__item" data-tilt>
+          <img src="images/toast.jpg" alt="Бриошь с фисташкой и вишнёвым джемом" loading="lazy" />
+          <figcaption>Бриошь, фисташка, вишнёвый джем</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY: 3D coverflow -->
+  <section class="section" id="gallery">
+    <div class="giant display" aria-hidden="true">GALLERY</div>
+    <div class="wrap">
+      <div class="section__head">
+        <h2 class="display section__title">ГАЛЕРЕЯ</h2>
+        <p class="section__note">листайте / перетаскивайте</p>
+      </div>
+    </div>
+    <div class="carousel reveal">
+      <div class="carousel__stage">
+        <figure class="carousel__item"><img src="images/latte.jpg" alt="Фирменный латте BUTTER" /><figcaption>Фирменный латте</figcaption></figure>
+        <figure class="carousel__item"><img src="images/waffles.jpg" alt="Льежские вафли с ягодами" /><figcaption>Льежские вафли, ягоды</figcaption></figure>
+        <figure class="carousel__item"><img src="images/sandwich.jpg" alt="Сэндвич с тунцом" /><figcaption>Чиабатта, тунец, томаты</figcaption></figure>
+        <figure class="carousel__item"><img src="images/drink-cherry.jpg" alt="Лимонад гранат-вишня" /><figcaption>Лимонад гранат, вишня</figcaption></figure>
+        <figure class="carousel__item"><img src="images/breakfast.jpg" alt="Скрамбл с ветчиной" /><figcaption>Скрамбл, ветчина индейка</figcaption></figure>
+        <figure class="carousel__item"><img src="images/toast.jpg" alt="Бриошь с вишней и фисташкой" /><figcaption>Бриошь, фисташка, вишня</figcaption></figure>
+        <figure class="carousel__item"><img src="images/waffles-top.jpg" alt="Вафли с ягодами" /><figcaption>Вафли, ягоды, шоколад</figcaption></figure>
+        <figure class="carousel__item doc"><img src="images/menu-drinks.jpg" alt="Меню напитков" /><figcaption>Меню напитков</figcaption></figure>
+        <figure class="carousel__item doc"><img src="images/menu-food.jpg" alt="Меню завтраков" /><figcaption>Меню завтраков</figcaption></figure>
+      </div>
+      <div class="carousel__nav">
+        <button class="carousel__btn" type="button" data-carousel-prev aria-label="Назад">←</button>
+        <button class="carousel__btn" type="button" data-carousel-next aria-label="Вперёд">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACTS -->
+  <section class="section" id="contacts">
+    <div class="giant display" aria-hidden="true">VISIT US</div>
+    <div class="wrap">
+      <div class="contacts">
+        <div class="contacts__card spot reveal" data-tilt data-tilt-max="5">
+          <h2 class="display">КОНТАКТЫ</h2>
+          <dl>
+            <dt>Адрес</dt>
+            <dd>просп. Расула Гамзатова, 14, Махачкала</dd>
+            <dt>Часы работы</dt>
+            <dd>ежедневно 10:00–20:00</dd>
+            <dt>Телефон</dt>
+            <dd><a href="tel:+79882777192">+7 (988) 277-71-92</a></dd>
+          </dl>
+          <div class="contacts__cta">
+            <a class="btn btn--light" href="tel:+79882777192">Позвонить</a>
+            <a class="btn btn--outline-light" href="https://wa.me/79882777192" target="_blank" rel="noopener">WhatsApp</a>
+          </div>
+        </div>
+        <div class="map reveal">
+          <iframe title="BUTTER на карте" src="https://yandex.ru/map-widget/v1/?text=%D0%9C%D0%B0%D1%85%D0%B0%D1%87%D0%BA%D0%B0%D0%BB%D0%B0%2C%20%D0%BF%D1%80%D0%BE%D1%81%D0%BF%D0%B5%D0%BA%D1%82%20%D0%A0%D0%B0%D1%81%D1%83%D0%BB%D0%B0%20%D0%93%D0%B0%D0%BC%D0%B7%D0%B0%D1%82%D0%BE%D0%B2%D0%B0%2C%2014&amp;z=17" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer__inner">
+    <span class="display footer__logo">BUTTER</span>
+    <span>© <span id="year">2026</span> BUTTER, Махачкала</span>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
